@@ -1,6 +1,5 @@
 import json
 import isodate
-api_key = 'AIzaSyDWQ3kErUFRViwURyYaxuonDwc4YDKQIdU'
 from YTProjectFiles.API_ConnectionInitiate.Api_initiate_video_details import get_allvideodetails
 from YTProjectFiles.ProjectFunctions.Getchanneldetails import extract_channel_name_from_channel_info
 def video_info(playlist_id,channel_id):
