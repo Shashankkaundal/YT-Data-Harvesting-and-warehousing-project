@@ -13,6 +13,9 @@ Once all above things are installed.Do below steps in order to run the project
 >Now import the project in pycharm IDE.
 >Go to ConfigHelpers Directory->DBConfigfile.py->Add your DB username,password,root details.
 >Go to API_KEY directory->API_KEY.txt->Add your API key in this file.
+>change path of below code
+>filename = r"/*your local path*/Youtubedataharvesting/YTProjectFiles/API_Key/API_KEY.txt" in below mentioned directory for all .py files
+>>>>API_Connectioninitiate
 >Now open the terminal and run the Streamlitinterface.py file using below command[Ensure you run this command in the directory where this file is present.]
 -->streamlit run Streamlitinterface.py
 >Now Streamlit interface should open and you can do channel_id search and DB queries.
