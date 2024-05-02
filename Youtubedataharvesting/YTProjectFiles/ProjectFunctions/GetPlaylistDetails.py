@@ -8,7 +8,7 @@ def playlist_info(playlist_id,channel_id):
     channel_data=channeldetl_initiate(channel_id)
     #playlistdata=playlistdetl_initiate()
     playlistname=playlistname_initiate(playlist_id)
-    print(playlistname)
+    #print(playlistname)
     playlist_informations = {
         "channel_id": channel_id,
         "playlist_id": playlist_id,
