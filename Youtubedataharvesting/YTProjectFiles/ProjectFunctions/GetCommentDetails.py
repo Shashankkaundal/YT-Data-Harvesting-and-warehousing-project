@@ -1,5 +1,4 @@
 import json
-api_key = 'AIzaSyDWQ3kErUFRViwURyYaxuonDwc4YDKQIdU'
 from YTProjectFiles.API_ConnectionInitiate.Api_initiate_comment_details import get_allcomments
 def comment_info(playlist_id,channel_id):
     commentdetails=get_allcomments(playlist_id)
