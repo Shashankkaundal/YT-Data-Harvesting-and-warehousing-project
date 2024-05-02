@@ -1,0 +1,2 @@
+from YTProjectFiles.ProjectFunctions.Getchanneldetails import channel_info
+x=channel_info()
