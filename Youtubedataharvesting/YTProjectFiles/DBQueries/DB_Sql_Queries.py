@@ -30,9 +30,9 @@ def query3():
     # preparing a cursor object
     cursorObject = configfile.cursor()
     cursorObject.execute("""USE YTHarvest""")
-    query3="""(select video_name,channel_name
-            from video_info where view_count in (select max(view_count) from video_info 
-            group by channel_name))"""
+    query3="""(select video_name,channel_name 
+    from video_info where view_count in 
+    (select max(view_count) from video_info group by channel_name) limit 10)"""
     cursorObject.execute(query3)
     # x=cursorObject.fetchall()
     df = pd.DataFrame(cursorObject.fetchall(), columns=["VIDEO_NAME", "CHANNEL_NAME"])
