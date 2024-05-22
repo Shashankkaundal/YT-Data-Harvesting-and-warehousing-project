@@ -12,6 +12,7 @@ def Channelinfotable(channel_id):
     #if (c == None):
     #cursorObject.execute("""CREATE DATABASE YTHarvest""")
     #else:
+    cursorObject.execute("""CREATE DATABASE IF NOT EXISTS YTHarvest""")
     cursorObject.execute("""USE YTHarvest""")
     Channelinfo = """CREATE TABLE IF NOT EXISTS CHANNEL_INFO (
                     CHANNEL_ID VARCHAR(255) NOT NULL PRIMARY KEY,

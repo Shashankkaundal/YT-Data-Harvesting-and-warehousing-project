@@ -52,6 +52,7 @@ def Commentsinfotable(playlist_id,channel_id):
     #cursorObject.execute("""CREATE DATABASE YTHarvest""")
     #else:
      #cursorObject.execute("""USE YTHarvest""")
+    cursorObject.execute("""CREATE DATABASE IF NOT EXISTS YTHarvest""")
     cursorObject.execute("""USE YTHarvest""")
     # creating the table for ChannelInfo
     Channelinfo = """CREATE TABLE IF NOT EXISTS COMMENTS_INFO (
